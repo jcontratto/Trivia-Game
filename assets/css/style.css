@@ -1,14 +1,14 @@
 body {
-    background-image: url("..//images/stock-vector-a-high-detail-vector-mock-up-of-a-typical-comic-book-page-with-various-speech-bubbles-symbols-and-172602359.jpg");
+    background-image: url("..//images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
     
 .navbar {
     font-family: 'Permanent Marker';
-    font-size: 10px;
-    color: black;
-    background-image: url("..//images/stock-vector-a-high-detail-vector-mock-up-of-a-typical-comic-book-page-with-various-speech-bubbles-symbols-and-172602359.jpg");
+    font-size: 30px;
+    color: red;
+    background-image: url("..//images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -17,16 +17,15 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 50px;
     padding: 10%;
-    color: black;
-    background-color: lightseagreen;
+    color: white;
 }
 
 .start {
-    background-color: white;
+    background-color: black;
 }
 
 .answers p:hover {
-    color: black;
+    color: white;
     border: 2px;
     border-style: solid;
     font-family: "Comic Sans MS", cursive, sans-serif;

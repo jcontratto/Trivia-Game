@@ -20,27 +20,27 @@ $(document).ready(function() {
         },
     
         four: {
-            question: "?",
-            answers: [""],
-            correct: ""
+            question: "Which character is not a X-Men?",
+            answers: ["Wolverine", "Cyclops", "Punisher", "Jubilee"],
+            correct: "Punisher"
         },
     
         five: {
-            question: "?",
-            answers: [""],
-            correct: ""
+            question: "What planet is Superman from?",
+            answers: ["Earth", "Crypton", "Mars", "The Sun"],
+            correct: "Crypton"
         },
     
         six: {
-            question: "?",
-            answers: [""],
-            correct: ""
+            question: "Who is Scarlet Witch's brother?",
+            answers: ["Vision", "Silver Surver", "Quicksilver", "Flash"],
+            correct: "Quicksilver"
         },
     
         seven: {
-            question: "?",
-            answers: [""],
-            correct: ""
+            question: "What logo is on the Punisher's costume?",
+            answers: ["Skull", "P", "Punisher", "A Bullseye"],
+            correct: "Skull"
         },
     
         eight: {
@@ -55,11 +55,6 @@ $(document).ready(function() {
             correct: ""
         },
     
-        ten: {
-            question: "?",
-            answers: [""],
-            correct: ""
-        },
     };
     
     //divs to contain info
@@ -116,7 +111,7 @@ $(document).ready(function() {
                 $(".answers p").remove();
                 $(answerDiv).remove();
                     $(".main").append(rightDiv);
-                $(".rightAns").text("THAT'S A BINGO");
+                $(".rightAns").text("THAT'S A BINGO!");
                 correct++;
             } else {
                 clearInterval(counter);
@@ -153,23 +148,23 @@ $(document).ready(function() {
         $(".countdown h3").html("TIME REMAINING: " + time);
          
         if (time < 1) {
-        clearInterval(counter);
-        $(timerDiv).remove();
-        $(questionDiv).remove();
-        $(".answers p").remove();
-        $(answerDiv).remove();
-        $(".main").append(rightDiv);
-        $(".rightAns").html("OUT OF TIME! THE CORRECT ANSWER WAS: " + questions[key].correct);
-        timeout++;
-        n++;
-        key = keys[n];
-        
+            clearInterval(counter);
+            $(timerDiv).remove();
+            $(questionDiv).remove();
+            $(".answers p").remove();
+            $(answerDiv).remove();
+            $(".main").append(rightDiv);
+            $(".rightAns").html("YOU TOOK TO LONG! THE RIGHT ANSWER IS: " + questions[key].correct);
+            timeout++;
+            n++;
+            key = keys[n];
+            
             if (checkIfLast()) {
-            displayFinalScore();
-            } else {
-            setTimeout(countReset, 3000);
-            setTimeout(reset, 3000);
-            setTimeout(showQA, 3000);
+                displayFinalScore();
+                } else {
+                setTimeout(countReset, 3000);
+                setTimeout(reset, 3000);
+                setTimeout(showQA, 3000);
             }
         }
     }
@@ -179,7 +174,7 @@ $(document).ready(function() {
         return true;
         }
         return false;
-        }
+    }
     
     //timer for message after choosing answer
      function countReset() {
