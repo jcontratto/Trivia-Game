@@ -20,7 +20,7 @@ $(document).ready(function() {
         },
     
         four: {
-            question: "Which character is not a X-Men?",
+            question: "Which hero is not part of the X-Men group?",
             answers: ["Wolverine", "Cyclops", "Punisher", "Jubilee"],
             correct: "Punisher"
         },
@@ -44,17 +44,23 @@ $(document).ready(function() {
         },
     
         eight: {
-            question: "?",
-            answers: [""],
-            correct: ""
+            question: "What item gives the Green Lantern his super powers?",
+            answers: ["An axe", "A Hammer", "A Ring", "A Stick"],
+            correct: "A Ring"
         },
     
         nine: {
-            question: "?",
-            answers: [""],
-            correct: ""
+            question: "All of these characters are villians, except for?",
+            answers: ["Deadpool", "Red Skull", "Joker", "Dr.Doom"],
+            correct: "Deadpool"
         },
-    
+        
+        ten: {
+            question: "BONUS QUESTION: Which comic universe is better?",
+            answers: ["Marvel", "DC"],
+            correct: "MARVEL!"
+
+        }
     };
     
     //divs to contain info
@@ -85,7 +91,7 @@ $(document).ready(function() {
             $(".rightAns").empty();
             $(".rightAns").remove();
             $(".main").append(timerDiv);
-            $(".countdown h3").html("TIME REMAINING: " + time);
+            $(".countdown h3").html("TIME LEFT: " + time);
             $(".main").append(questionDiv);
             $(".main").append(answerDiv);
         }
@@ -145,7 +151,7 @@ $(document).ready(function() {
     //shows time remaining at the top of each question
     function count() {
         time--
-        $(".countdown h3").html("TIME REMAINING: " + time);
+        $(".countdown h3").html("TIME LEFT: " + time);
          
         if (time < 1) {
             clearInterval(counter);

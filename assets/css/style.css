@@ -6,7 +6,7 @@ body {
     
 .navbar {
     font-family: 'Permanent Marker';
-    font-size: 30px;
+    font-size: 30px bold;
     color: red;
     background-image: url("..//images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
