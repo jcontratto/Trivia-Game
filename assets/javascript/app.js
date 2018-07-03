@@ -176,12 +176,12 @@ $(document).ready(function() {
         return false;
     }
     
-    //timer for message after choosing answer
+    //choosing answer timer
      function countReset() {
         counter = setInterval(count, 500);
     }
     
-    //displays final score after 'check if last' returns yes
+    //final score display
     function displayFinalScore() {
         $(".rightAns").remove();
         $(".start").css("margin-top", "30px");
