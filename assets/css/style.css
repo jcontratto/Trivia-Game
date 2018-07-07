@@ -13,7 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
 }
-/*Main section*/
+/*Main section and start button*/
 .main {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 50px;
@@ -23,6 +23,7 @@ body {
 /*Start button*/
 .start {
     background-color: black;
+    color: white;
 }
 /*Anwers with the hover bar*/
 .answers p:hover {
@@ -33,14 +34,6 @@ body {
     background-color: black;
 }
 /*Background color black to see the questions*/
-.question {
-    background-color: black;
-}
-/*Background color for after answering and get right/wrong ans*/
-.rightAns {
-    background-color: black;
-}
-/*Background color for the counter*/
-.counter {
+.question, .rightAns {
     background-color: black;
 }
