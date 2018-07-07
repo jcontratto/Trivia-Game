@@ -4,7 +4,7 @@ $(document).ready(function() {
     var questions = {
         one: {
             question: "What is Spider-Man's alter ego name?",
-            answers: ["Bruce Wayne", "Logan", "Peter Parker", "Tony Stark"],
+            answers: ["Bruce Wayne", "Bruce Banner", "Peter Parker", "Tony Stark"],
             correct: "Peter Parker"
         },
         two: {
@@ -12,55 +12,46 @@ $(document).ready(function() {
             answers: ["Robin", "Alfred", "Archer", "Todd"],
             correct: "Alfred"
         },
-    
         three: {
             question: "How many infinity stones does Thanos need to rule the universe?",
-            answers: ["0, he's already the man", "2", "5", "6"],
+            answers: ["0, he's already the man", "3", "5", "6"],
             correct: "6"
         },
-    
         four: {
             question: "Which hero is not part of the X-Men group?",
-            answers: ["Wolverine", "Cyclops", "Punisher", "Jubilee"],
+            answers: ["Gambit", "Cyclops", "Punisher", "Jubilee"],
             correct: "Punisher"
         },
-    
         five: {
             question: "What planet is Superman from?",
-            answers: ["Earth", "Crypton", "Mars", "The Sun"],
+            answers: ["Earth", "Crypton", "Wakanda", "Asgard"],
             correct: "Crypton"
         },
-    
         six: {
             question: "Who is Scarlet Witch's brother?",
             answers: ["Vision", "Silver Surver", "Quicksilver", "Flash"],
             correct: "Quicksilver"
         },
-    
         seven: {
-            question: "What logo is on the Punisher's costume?",
-            answers: ["Skull", "P", "Punisher", "A Bullseye"],
+            question: "What image is on the Punisher's costume?",
+            answers: ["Skull", "The letter P", "A Knife", "A Bullseye"],
             correct: "Skull"
         },
-    
         eight: {
             question: "What item gives the Green Lantern his super powers?",
             answers: ["An axe", "A Hammer", "A Ring", "A Stick"],
             correct: "A Ring"
         },
-    
         nine: {
             question: "All of these characters are villians, except for?",
             answers: ["Deadpool", "Red Skull", "Joker", "Dr.Doom"],
             correct: "Deadpool"
         },
-        
         ten: {
-            question: "BONUS QUESTION: Which comic universe is better?",
+            question: "BONUS QUESTION: Which comic universe is way better than the other?",
             answers: ["Marvel", "DC"],
-            correct: "MARVEL!"
-
-        }
+            correct: "Marvel"
+        },
     };
     
     //divs to contain info
@@ -146,7 +137,7 @@ $(document).ready(function() {
     
     showQA();
     
-    var counter = setInterval(count, 500);
+    var counter = setInterval(count, 9 * 100);
     
     //shows time remaining at the top of each question
     function count() {
@@ -168,9 +159,9 @@ $(document).ready(function() {
             if (checkIfLast()) {
                 displayFinalScore();
                 } else {
-                setTimeout(countReset, 3000);
-                setTimeout(reset, 3000);
-                setTimeout(showQA, 3000);
+                setTimeout(countReset, 3 * 1000);
+                setTimeout(reset, 3 * 1000);
+                setTimeout(showQA, 3 * 1000);
             }
         }
     }
@@ -182,12 +173,12 @@ $(document).ready(function() {
         return false;
     }
     
-    //choosing answer timer
+    //Answer timer
      function countReset() {
-        counter = setInterval(count, 500);
+        counter = setInterval(count, 9 * 100);
     }
     
-    //final score display
+    //Final score display
     function displayFinalScore() {
         $(".rightAns").remove();
         $(".start").css("margin-top", "30px");
@@ -197,7 +188,7 @@ $(document).ready(function() {
         $(".main").prepend("<h2>CORRECT: " + correct + "</h2>");
         }
     };
-    
+    //need to have reset after game is over
     $(document).on("click", ".start", setup);
     
 });

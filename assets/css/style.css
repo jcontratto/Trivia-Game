@@ -5,11 +5,10 @@ body {
     background-size: 100%;
 }
 /*Navbar section*/   
-/*Try and add Marvel and DC logo in corner navbar*/
 .navbar {
     font-family: 'Permanent Marker';
-    font-size: 30px bold;
-    color: red;
+    font-size: 50px bold;
+    color: red;             
     background-image: url("..//images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -19,7 +18,7 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 50px;
     padding: 10%;
-    color: white;
+    color: yellow;
 }
 /*Start button*/
 .start {
@@ -27,9 +26,17 @@ body {
 }
 /*Anwers with the hover bar*/
 .answers p:hover {
-    color: white;
+    color: yellow;
     border: 2px;
     border-style: solid;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: black;
+}
+/*Background color black to see the questions*/
+.question {
+    background-color: black;
+}
+/*Background color for after answering and get right/wrong ans*/
+.rightAns {
     background-color: black;
 }
