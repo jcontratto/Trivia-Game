@@ -12,6 +12,7 @@ body {
     background-image: url("..//images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    
 }
 /*Main section and start button*/
 .main {
@@ -21,7 +22,7 @@ body {
     color: yellow;
 }
 /*Start button*/
-.start {
+.start, .restart {
     background-color: black;
     color: white;
 }

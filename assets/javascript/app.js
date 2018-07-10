@@ -69,6 +69,7 @@ $(document).ready(function() {
     //reset and game setup
     function setup() {
         $(".start").css("display", "none");
+      
     
         var correct = 0;
         var incorrect = 0;
@@ -78,6 +79,7 @@ $(document).ready(function() {
         key = keys[n];
     
         var reset = function() {
+            $(".finalInfo").remove();
             time = 30;
             $(".rightAns").empty();
             $(".rightAns").remove();
@@ -86,9 +88,7 @@ $(document).ready(function() {
             $(".main").append(questionDiv);
             $(".main").append(answerDiv);
         }
-    
     reset();
-    
     //questions and answer box
     function showQA() {
         $(".question h3").html(questions[key].question);
@@ -128,16 +128,16 @@ $(document).ready(function() {
                 displayFinalScore();
 
             } else {
-                setTimeout(countReset, 3 * 1000);
-                setTimeout(reset, 3 * 1000);
-                setTimeout(showQA, 3 * 1000);
+                setTimeout(countReset, 3000);
+                setTimeout(reset, 3000);
+                setTimeout(showQA, 3000);
             }
         });
     }
     
     showQA();
     
-    var counter = setInterval(count, 9 * 100);
+    var counter = setInterval(count, 900);
     
     //shows time remaining at the top of each question
     function count() {
@@ -159,9 +159,9 @@ $(document).ready(function() {
             if (checkIfLast()) {
                 displayFinalScore();
                 } else {
-                setTimeout(countReset, 3 * 1000);
-                setTimeout(reset, 3 * 1000);
-                setTimeout(showQA, 3 * 1000);
+                setTimeout(countReset, 3000);
+                setTimeout(reset, 3000);
+                setTimeout(showQA, 3000);
             }
         }
     }
@@ -172,20 +172,18 @@ $(document).ready(function() {
         }
         return false;
     }
-    
     //Answer timer
      function countReset() {
         counter = setInterval(count, 9 * 100);
     }
-    
     //Final score display
     function displayFinalScore() {
         $(".rightAns").remove();
         $(".start").css("margin-top", "30px");
         $(".start").css("display", "inline");
-        $(".main").prepend("<h2>UNANSWERED: " + timeout + "</h2>");
-        $(".main").prepend("<h2>INCORRECT: " + incorrect + "</h2>");
-        $(".main").prepend("<h2>CORRECT: " + correct + "</h2>");
+        $(".main").prepend("<h2 class=\"finalInfo\">UNANSWERED: " + timeout + "</h2>");
+        $(".main").prepend("<h2 class=\"finalInfo\">INCORRECT: " + incorrect + "</h2>");
+        $(".main").prepend("<h2 class=\"finalInfo\">CORRECT: " + correct + "</h2>");
         }
     };
     //need to have reset after game is over
