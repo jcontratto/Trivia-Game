@@ -1,6 +1,6 @@
 /*Body section*/
 body {
-    background-image: url("..//images/thumb-1920-567772.jpg");
+    background-image: url("../images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -9,7 +9,7 @@ body {
     font-family: 'Permanent Marker';
     font-size: 50px bold;
     color: red;             
-    background-image: url("..//images/thumb-1920-567772.jpg");
+    background-image: url("../images/thumb-1920-567772.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     
