@@ -12,46 +12,46 @@ $(document).ready(function () {
             answers: ["Robin", "Alfred", "Archer", "Todd"],
             correct: "Alfred"
         },
-        // three: {
-        //     question: "How many infinity stones does Thanos need to rule the universe?",
-        //     answers: ["0, he's already the man", "3", "5", "6"],
-        //     correct: "6"
-        // },
-        // four: {
-        //     question: "Which hero is not part of the X-Men group?",
-        //     answers: ["Gambit", "Cyclops", "Punisher", "Jubilee"],
-        //     correct: "Punisher"
-        // },
-        // five: {
-        //     question: "What planet is Superman from?",
-        //     answers: ["Earth", "Crypton", "Wakanda", "Asgard"],
-        //     correct: "Crypton"
-        // },
-        // six: {
-        //     question: "Who is Scarlet Witch's brother?",
-        //     answers: ["Vision", "Silver Surver", "Quicksilver", "Flash"],
-        //     correct: "Quicksilver"
-        // },
-        // seven: {
-        //     question: "What image is on the Punisher's costume?",
-        //     answers: ["Skull", "The letter P", "A Knife", "A Bullseye"],
-        //     correct: "Skull"
-        // },
-        // eight: {
-        //     question: "What item gives the Green Lantern his super powers?",
-        //     answers: ["An axe", "A Hammer", "A Ring", "A Stick"],
-        //     correct: "A Ring"
-        // },
-        // nine: {
-        //     question: "All of these characters are villians, except for?",
-        //     answers: ["Deadpool", "Red Skull", "Joker", "Dr.Doom"],
-        //     correct: "Deadpool"
-        // },
-        // ten: {
-        //     question: "BONUS QUESTION: Which comic universe is way better than the other?",
-        //     answers: ["Marvel", "DC"],
-        //     correct: "Marvel"
-        // },
+        three: {
+            question: "How many infinity stones does Thanos need to rule the universe?",
+            answers: ["0, he's already the man", "3", "5", "6"],
+            correct: "6"
+        },
+        four: {
+            question: "Which hero is not part of the X-Men group?",
+            answers: ["Gambit", "Cyclops", "Punisher", "Jubilee"],
+            correct: "Punisher"
+        },
+        five: {
+            question: "What planet is Superman from?",
+            answers: ["Earth", "Crypton", "Wakanda", "Asgard"],
+            correct: "Crypton"
+        },
+        six: {
+            question: "Who is Scarlet Witch's brother?",
+            answers: ["Vision", "Silver Surver", "Quicksilver", "Flash"],
+            correct: "Quicksilver"
+        },
+        seven: {
+            question: "What image is on the Punisher's costume?",
+            answers: ["Skull", "The letter P", "A Knife", "A Bullseye"],
+            correct: "Skull"
+        },
+        eight: {
+            question: "What item gives the Green Lantern his super powers?",
+            answers: ["An axe", "A Hammer", "A Ring", "A Stick"],
+            correct: "A Ring"
+        },
+        nine: {
+            question: "All of these characters are villians, except for?",
+            answers: ["Deadpool", "Red Skull", "Joker", "Dr.Doom"],
+            correct: "Deadpool"
+        },
+        ten: {
+            question: "BONUS QUESTION: Which comic universe is way better than the other?",
+            answers: ["Marvel", "DC"],
+            correct: "Marvel"
+        },
     };
 
     //divs to contain info
